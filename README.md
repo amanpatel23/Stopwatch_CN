@@ -7,6 +7,6 @@ Link: https://amanpatel23.github.io/Stopwatch_CN/
 * Button to stop or pause the stopwatch
 * Button to reset the stopwatch
 
-### Screenshot
-![screenshot of the webpage](/assets/stopwatch_screenshot.png)
-
+### Screenshots
+![screenshot of the webpage](/assets/stopwatch_screenshot1.png)
+![screenshot of the webpage](/assets/stopwatch_screenshot2.png)
