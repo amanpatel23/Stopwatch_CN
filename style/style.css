@@ -9,7 +9,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background: url(../assets/football_stadium.jpg);
+    background: url('../assets/football_stadium.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -50,6 +50,8 @@ body::after {
     font-size: 1.2rem;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: capitalize;
 }
 
 #timer__container {
@@ -77,7 +79,7 @@ body::after {
 } 
 
 .numeric__data {
-    font-size: 12rem;
+    font-size: 10rem;
     color: #FBFBFB;
     letter-spacing: -0.1em;
     font-weight: 300;
@@ -130,4 +132,52 @@ body::after {
 .start__btn button {
     box-shadow: 1px 2px #A5825B;
     font-weight: 900;
+}
+
+/* media queries */
+@media only screen and (max-width: 992px) {
+    #logo__image img {
+        width: 50px;
+    }
+
+    #timer__container__grid {
+        grid-gap: 0 !important;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .timer__grid__item {
+        border: none;
+        
+    }
+
+    .timer__grid__item:nth-child(1) {
+        /* border-bottom: 1px solid #A5825B; */
+        background: #A5825B;
+    }
+
+    .timer__grid__item:nth-child(4) {
+        /* border-bottom: 1px solid #A5825B; */
+        background: #A5825B;
+    }
+
+    .numeric__data {
+        font-size: 8rem;
+    }
+
+    #quote {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .numeric__data {
+        font-size: 6rem;
+    }
+
+    .btn button {
+        /* font-size: 0.6rem; */
+        padding: 10px 40px;
+    }
 }
